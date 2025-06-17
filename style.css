@@ -1,0 +1,40 @@
+header{
+    color:#774936;
+    text-align: center;
+    margin-bottom: 5 c  0px;
+
+
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    }
+.anime1 button{
+    width: 100px;
+    border-radius: 30px;
+    border-style: outset;
+    border-color: #774936;
+}
+
+.anime2 button{
+    width: 100px;
+    border-radius: 30px ;
+    border-style:outset;
+    border-color:#774936;
+}
+
+.anime3 button{
+    width: 100px;
+    border-radius: 30px;
+    border-style: outset;
+    border-color: #774936;
+
+}
+
+.anime1 , .anime2 , .anime3{
+    flex: 1 1 calc(33.3% - 20px);
+    max-width: calc(33.3% -20px);
+    text-align: center;
+}

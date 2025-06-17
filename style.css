@@ -1,9 +1,14 @@
 header{
     color:#774936;
     text-align: center;
-    margin-bottom: 5 c  0px;
+    margin-bottom:50px;
+    background-color:#F1E5CD ;
+    padding-top: 2px;
+    padding-bottom: 30px;
 
-
+}
+body{
+    background-color:#F7EFE1;
 }
 .container{
     display: flex;
@@ -11,29 +16,71 @@ header{
     flex-wrap: wrap;
     
     }
-.anime1 button{
-    width: 100px;
+.anime1 img{
     border-radius: 30px;
     border-style: outset;
     border-color: #774936;
 }
+.anime1 p{
+    font-size: 30px;
+    color: #774936;
+}
 
-.anime2 button{
-    width: 100px;
+
+.anime2 img{
     border-radius: 30px ;
     border-style:outset;
     border-color:#774936;
 }
+.anime2 p {
 
-.anime3 button{
-    width: 100px;
+    font-size: 30px;
+    color: #774936;
+}
+.anime3 img{
     border-radius: 30px;
     border-style: outset;
     border-color: #774936;
-
 }
 
-.anime1 , .anime2 , .anime3{
+.anime3 p {
+    font-size: 30px;
+    color: #774936;
+}
+
+.anime4 img{
+    border-radius: 30px;
+    border-style: outset;
+    border-color: #774936;
+}
+
+.anime4 p{
+    font-size: 30px;
+    color: #774936;
+}
+.anime5 img{
+    border-radius: 30px;
+    border-style:outset;
+    border-color: #774936;
+}
+
+.anime5 p{
+    font-size: 30px;
+    color: #774936;
+}
+.anime6 img{
+    border-radius: 30px;
+    border-style: outset;
+    border-color: #774936
+}
+
+.anime6 p {
+    font-size: 30px;
+    color: #774936;
+}
+
+
+.anime1 , .anime2 , .anime3, .anime4, .anime5, .anime6{
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% -20px);
     text-align: center;

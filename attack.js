@@ -25,7 +25,7 @@ const quizData = [{
 },
 {
     question: "What is the name of the Titan that possesses the ability to harden its skin and create crystal-like structures ?",
-    answers : ["Female Titan", "Beast Titan", "Armored Titan","Attack Tiatan","War Hammer Titan"],
+    answers : ["Female Titan", "Beast Titan", "Armored Titan","Attack Titan","War Hammer Titan"],
     correct: 4,
 },
 ]

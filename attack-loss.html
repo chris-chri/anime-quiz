@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attack on Titan Quiz - Finished</title>
+
+        <link rel="stylesheet" href="attack-loss.css">
+
+    </head>
+    <body>
+        <div class="container" style= "position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;"
+            >
+        <video class="background-video" autoplay muted loop>
+            <source src="attack.mp4" type="video/mp4">
+        </video>
+</div>
+        <div class="finish-screen">
+            <div class="dramatic-text" id="dramatic-text"><p>Eren has started The Rumbling</p></div>
+            <div class="subtitle">Humanity has Lost.....</div>
+            <button class="restart-btn" onclick="restartQuiz()"> Try Again </button>
+        </div>
+       
+    <script src="attack-loss.js"></script>
+    </body>
+</html>

@@ -9,6 +9,12 @@
 <body>
 <header>
    <h1> Welcome to Anime Quiz !</h1>
+   <div class="help-button">
+   <nav>
+    <a href="#" onclick="openModal(); return false;"> ? </a>
+
+   </nav>
+   </div>
 </header>
 <div class="container">
 <div class="anime1"> 
@@ -50,7 +56,84 @@
         <p>My hero academia</p>
     </div>
 </div>
+<div class="modal-overlay " id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-title"> Help center</h2>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+         <div class="modal-content">
+        <div class="help-section">
+            
+             <h3>How do the Quizzes works</h3>
+            <p>If you get more than 4  out of 5 you get The Winning scence:</p>
+             <img src="win-gif.gif">
+            <p> If you get less than 4 out of 5 you get the Losing screen:</p>
+             <img src="losing-clip.gif">
+             <p> All the Quizes are multiple options questions</p>
+        </div>
+
+        <div class="help-section">
+            <h3>Available Anime Quizzes</h3>
+            <p>Attack On Titan -  Fight with the Survery Crops and Stop Eren.</p>
+            <p>Bleach - Save the Soul Society</p>
+            <p>Naruto - Stop Madara Uchiha and save the Shinobi World</p>
+            <p>One Piece - Defeat Kadio</p>
+            <p>Jujutsu Kasisen - Defeat Sukuna</p>
+            <p>My Hero Academia - Defeat </p>
+        </div>
+        <div class="help-section">
+            <h2> Anime Quizzes That are going to be implemented in the future</h2>
+            <p>Black Clover</p>
+            <p>Death Note</p>
+            <p>And More...</p>
+        </div>
+
+
+    </div>
+    </div>
+   
+
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeBtn = document.getElementById('closeBtn');
+        const modalOverlay = document.getElementById('modalOverlay');
+
+        function openModal(){
+            modalOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+        }
+    
+
+        function closeModal(){
+                modalOverlay.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            
+        }
+
+        window.openModal = openModal;
+
+
+      
+        closeBtn.addEventListener('click',closeModal);
+
+
+        modalOverlay.addEventListener('click', function(e){
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !modalOverlay.classList.contains('hidden')) {
+            closeModal();
+    }
+        
+        });
+    });
+</script>
 </body>
 </html>

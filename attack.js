@@ -39,7 +39,7 @@ const answersElement = document.getElementById("answers")
 const nextBtn = document.getElementById("nextBtn")
 const questionCounter = document.getElementById("questionCounter")
 const progressFill = document.getElementById("progressFill")
-
+const scoreDisplay = document.getElementById("scoreDisplay")
 
 function loadQuestion() {
     const current = quizData[currentQuestion]
@@ -56,6 +56,7 @@ function loadQuestion() {
     questionCounter.textContent = `Question ${currentQuestion + 1} of ${quizData.length}`
     const progress = ((currentQuestion + 1) /   quizData.length) * 100
     progressFill.style.width = progress + "%"
+    scoreDisplay.textContent = `Score: ${score}`
 
 
     selectedAnswer = null
@@ -87,6 +88,7 @@ function nextQuestion() {
     if (currentQuestion < quizData.length){
         loadQuestion()
     } else {
+        localStorage.setItem('quizScore',score);
         if (score >= 4) {
             window.location.href = "victory.html"
         } else {

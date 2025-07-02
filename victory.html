@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <title>Attack on Titan Quiz Win</title>
+        <link rel="stylesheet" href="attack-victory.css">
+    </head>
+    <body>
+
+        <div class="container" style="position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;"
+        >
+        <video class="background-video" autoplay muted loop>
+            <source src="attack-win.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="finish-screen">
+            <div class="dramatic-text" id="dramatic-text"><p> Eren has has been Eliminated </p></div> 
+            <div class="subtitle">You have Won! </div>
+            <div class="dramatic-text" id="final-score"></div>
+            <button class="restart-btn" onclick="restartQuiz()">Try Again</button>
+            <button class="main-btn" onclick="MainMenu()">Main Menu</button>
+            </div> 
+        
+
+        <script src="attack-victory.js"></script>
+
+    </body>
+</html>

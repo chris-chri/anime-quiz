@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> One Piece lost</title>
+        <link rel="stylesheet" href="one-loss.css">
+         
+    </head>
+    <body>
+        <div class="container" style="position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:-2;
+        "
+        >
+        <video class="background-video" autoplay muted loop>
+            <source src="one-loss.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    <div class="finish-screen">
+        <div class="dramatic-text" id="dramatic-text">Luffy Has Been Killed</div>
+        <div class="subtitle">The Pirates Have Lost....</div>
+        <div class="dramatic-text" id="final-score"></div>
+        <button class="restart-btn" onclick="restartQuiz()">Try Again</button>
+        <button class="main-btn" onclick="MainMenu()">Main Menu</button>
+    </div>
+    <script src="one-loss.js"></script>
+    </body>
+</html>

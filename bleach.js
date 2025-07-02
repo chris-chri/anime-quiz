@@ -7,8 +7,8 @@ const quizData = [
     },
 
 { 
-    question:"What is the name of the group led by Yhwach ?",
-    answers: ["The Sternritter","The Espada","The Gotei 13","The Visored","The Arrancar"],
+    question:"What Race is Yhwach ?",
+    answers: ["Quincy","Human","Shinigami","Soul","Dragon"],
     correct: 0,
 
 },
@@ -41,8 +41,8 @@ const questionElement =document.getElementById("question1")
 const answersElement = document.getElementById("answers1")
 const nextBtn = document.getElementById("nextBtn1")
 const questionCounter = document.getElementById("questionCounter1")
-const progressFill = document.getElementById("progressFill1")
-
+const progressFill = document.getElementById("progressFill")
+const scoreDisplay = document.getElementById("scoreDisplay")
 function loadQuestion(){
     const current = quizData[currentQuestion]
     questionElement.textContent = current.question
@@ -55,9 +55,11 @@ function loadQuestion(){
         answersElement.appendChild(button)
     })
 
+
     questionCounter.textContent = `Question ${currentQuestion + 1} of ${quizData.length}`
     const progress = ((currentQuestion + 1) / quizData.length) * 100
     progressFill.style.width = progress + "%"
+    scoreDisplay.textContent = `Score: ${score}`
 
 
     selectedAnswer = null
@@ -87,6 +89,7 @@ function nextQuestion(){
     if (currentQuestion < quizData.length) {
         loadQuestion()
     }  else {
+        localStorage.setItem('quizScore',score);
         if  (score >= 4) {
             window.location.href = "bleach-win.html"
         } else {

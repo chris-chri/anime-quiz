@@ -107,7 +107,13 @@ body{
     pointer-events:none;
 }
 
+.score-display {
+    font-size:1.2rem;
+    color: #333;
+    margin-top:10px;
+    font-weight:bold;
 
+}
 .next-btn.active{
     opacity: 1 ;
     pointer-events:auto;
@@ -118,3 +124,47 @@ body{
     box-shadow: 0 10px 20px rgba(69, 108, 165, 0.3);
 }
 
+@keyframes victoryReveal {
+    0% {
+        opacity:0;
+        transform:scale(0.5) rotateY(180deg);
+    }
+
+    50% {
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100% {
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    100% {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.victory-glow {
+    animation: victoryGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes victory-glow {
+    0% {
+        text-shadow: 0 0 20px #0ff000, 0 0 40px #00ff00, 0 0 60px #00ff00, 2px 2px 4px rgba(0,0,0,0.8);
+
+    }
+
+    100% {
+        text-shadow: 0 0 30px #00ff00, 0 0 60px #00ff00, 0 0 90px #00ff00, 2px 2px 4px rgba(0,0,0,0.8);
+    }
+}

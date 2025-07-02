@@ -1,3 +1,5 @@
+
+
 header{
     display:flex;
     justify-content: space-between;
@@ -6,45 +8,271 @@ header{
     background-color:#F1E5CD ;
     padding-top: 12px;
     padding-bottom: 30px;
+    border-bottom: solid brown;
+    border-bottom-width: 10px;
 
 }
 
+
 nav a{
-    font-size: 20px ;
+    font-size: 19px ;
     text-decoration:none;
     margin-right: 40px;
     margin-top:90px;
+    color: #916a59;
+    align-items: center;
+    text-align: center;
     
 }
-body{
-    background-color:#F7EFE1;
+
+header h1{
+    text-decoration: underline;
+    text-decoration-thickness:10px;
+}
+
+nav a:hover{
+color: #d3805c;
+
+
+}
+.help-button a{
+    width:280px;
+    height: 30px;
+    background: burlywood;
+    padding:9px 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-radius: 100px;
+    margin-right: 10px; 
+    cursor: pointer;
+    font-weight: 900;
+    border: brown;
+    border-style: outset;
+}
+
+
+
+.help-button a:hover{
+    background-color: rgb(90, 14, 14);
+   border: solid burlywood;
+   border-style:outset;
+}
+
+.modal-overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color:(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    opacity:1;
+    transition: opacity 0.3s ease;
+
+}
+
+.modal {
+    background: beige;
+    border:solid brown;
+    border-style:outset;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    overflow-y:auto;
+    position: relative;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.modal-header {
+    padding: 1.5rem;
+    border-bottom:1px sold #eee;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+    background: #F1E5CD;
+    z-index: 10;
+}
+
+
+.modal-title {
+
+    font-size:1.5rem;
+    color: #774936;
+    font-weight: bold;
+}
+
+.close-btn {
+    background:burlywood;
+    border: none;
+    font-size: 1.5rem;
+    cursor:pointer;
+    color:#777;
+    transition: color 0.3s;
+    width:40px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    border-style:outset;
+    border-color: brown;
+}
+.close-btn:hover {
+    color:burlywood;
+    background-color: #774936;
+}
+
+.modal-content{ 
+    padding: 1.5rem;
+}
+
+.help-section {
+    margin-bottom: 2rem;
+}
+
+.help-section h2 {
+    color:#774936;
+    margin-bottom:1rem;
+    font-size:1.2rem;
+    text-decoration:underline;
+    text-decoration-thickness:10px;
+
+}
+.help-section h3 {
+    color: #774936;
+    text-decoration:underline;
+    text-decoration-thickness:10px;
+
+}
+.help-section p {
+    line-height:1.6;
+    margin-bottom:0.5rem;
+    color: #774936;
+}
+
+.hidden{
+    display:none;
+
+}
+
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.main-content h1{
+    color: #4a6baf;
+    margin-bottom: 1rem;
+}
+
+
+.main-content p{
+    line-height:1.6;
+    margin-bottom:1rem;
+    color:#555;
+}
+
+
+
+
+body {
+    background-color:#F1E5CD ;
+    
+    
 }
 .container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color:#F1E5CD ;
     
     }
+
+.anime1 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:30px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left:10px;
+}
 .anime1 img{
     border-radius: 30px;
     border-style: outset;
     border-color: #774936;
+    
+}
+
+.anime1:hover {
+    background: #d1a897;
+    border-radius: 20px;
+    padding-top: 30px;
+    border:  4px #774936;
+    border-style:outset;
+    margin-bottom: 40px;
+    margin-left: 10px;
 }
 .anime1 p{
     font-size: 30px;
     color: #774936;
+  
 }
+
+
 
 
 .anime2 img{
     border-radius: 30px ;
-    border-style:outset;
+    border-style:outset;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     border-color:#774936;
 }
-.anime2 p {
 
+.anime2 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:30px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left:10px;
+}
+
+
+.anime2:hover {
+    background: #d1a897;
+    border-radius: 20px;
+    padding-top: 30px;
+    border: 4px #774936;
+    border-style: outset;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.anime2 p {
     font-size: 30px;
     color: #774936;
+
 }
 .anime3 img{
     border-radius: 30px;
@@ -52,30 +280,92 @@ body{
     border-color: #774936;
 }
 
+.anime3:hover{
+    background: #d1a897;
+    border-radius: 20px;
+    padding-top: 30px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left: 10px;
+}
+
 .anime3 p {
     font-size: 30px;
     color: #774936;
+   
 }
 
+
+.anime3 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:30px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left:10px;
+}
 .anime4 img{
     border-radius: 30px;
     border-style: outset;
     border-color: #774936;
 }
+.anime4:hover{
+    background:#d1a897;
+    border-radius:20px;
+    padding-top: 40px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left:10px;
 
+}
 .anime4 p{
     font-size: 30px;
     color: #774936;
+    
 }
+
+.anime4 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:40px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom:40px;
+    margin-left:10px;
+} 
 .anime5 img{
     border-radius: 30px;
     border-style:outset;
     border-color: #774936;
 }
 
+.anime5:hover{
+    background: #d1a897;
+    border-radius:20px;
+    padding-top:40px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
 .anime5 p{
     font-size: 30px;
     color: #774936;
+}
+
+.anime5 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:40px;
+    border: 4px #774936;
+    border-style: outset;
+    margin-bottom: 40px;
+    margin-left:10px;
+
 }
 .anime6 img{
     border-radius: 30px;
@@ -83,11 +373,41 @@ body{
     border-color: #774936
 }
 
+.anime5:hover{
+    background:#d1a897;
+    border-radius: 20px;
+    padding-top:40px;
+    border: 4px #774936;
+    border-style: outset;
+    margin-bottom: 40px;
+    margin-left:10px;
+}
+
 .anime6 p {
     font-size: 30px;
     color: #774936;
+
 }
 
+.anime6:hover{
+    background:#d1a897;
+    border-radius:20px;
+    padding-top: 40px;
+    border: 4px #774936;
+    border-style:outset;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.anime6 {
+    background:burlywood;
+    border-radius:20px;
+    padding-top:40px;
+    border: 4px #774936;
+    border-style: outset;
+    margin-bottom:40px;
+    margin-left:10px;
+}
 
 .anime1 , .anime2 , .anime3, .anime4, .anime5, .anime6{
     flex: 1 1 calc(33.3% - 20px);

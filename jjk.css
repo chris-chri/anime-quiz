@@ -1,0 +1,176 @@
+html, body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url('jjkback.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.quiz-container {
+    transform:scale(0.8);
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    max-width:600px;
+    width:90%;
+    text-align:center;
+}
+
+.quiz-header {
+    margin-bottom:30px;
+}
+
+.quiz-title {
+    font-size:2.5rem;
+    color:#333;
+    margin-bottom:10px;
+}
+
+.question-counter {
+    font-size: 1.2rem;
+    color:#666;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width:100%;
+    height:8px;
+    background:#e0e0e0;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+
+.progress-fill {
+    height: 100%;
+    background:linear-gradient(90deg,#667eea,#764ba2);
+    transition: width 0.3s ease;
+}
+
+.question {
+    font-size:1.5rem;
+    color:#333;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+
+.answers {
+    display:grid;
+    gap:15px;
+    margin-bottom: 30px;
+
+}
+
+.answer-btn {
+    padding:15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius:10px;
+    background:white;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    text-align:left;
+}
+
+.answer-btn:hover {
+    border-color: #667eea;
+    background: #f8f9ff;
+    transform:translateY(-2px);
+}
+
+.answer-btn.selected{
+    border-color:#667eea;
+    background:#667eea;
+    color:white;
+}
+
+
+
+.next-btn {
+    background:linear-gradient(135deg , #667eea 0%, #764ba2 100%);
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:25px;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    opacity:0.5;
+    pointer-events:none;
+}
+
+
+.score-display {
+    font-size:1.2rem;
+    color:#333;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+
+.next-btn.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+
+.next-btn:hover.active {
+    transform:translateY(-2px);
+    box-shadow: 0 10px 20px rgba(69,108,165,0.3);
+}
+
+@keyframes victoryReveal {
+    0% {
+
+        opacity:0;
+        transform: scale(0.5) rotatr(180deg);
+    }
+
+    50% {
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100% {
+        opacity:1;
+        transfrom:scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0%{
+
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    100% {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.victory-glow {
+    animation: victoryGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes victory-glow {
+    0% {
+        text-shadow: 0 0 20px #0ff000, 0 0 40px #00ff00, 0 0 60px #00ff00, 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    100% {
+        text-shadow: 0 0 30px #00ff00, 0 0 60px #00ff00, 0 0 90px #00ff00, 2px 2px 4px rgba(0,0,0,0.8);
+    }
+}
+

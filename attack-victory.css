@@ -44,18 +44,18 @@ body{
 .dramatic-text {
     font-size: 29px ;
     margin-bottom:40px;
-    font-weight: bold;;
+    font-weight: bold;
     text-transform:uppercase;
     opacity:0;
     animation: victoryReveal 3s ease-out forwards;
-    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000,2px 2px 4px rgba(0,0,0,0,0.8);
+    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000,2px 2px 4px rgba(0,0,0,0.8);
+    
 }
 
 .subtitle {
     margin-bottom: 30px;
     font-size: 1.3rem;
     margin-top: 20px;
-    opacity: 0;
     animation: fadeInUp 2s ease-out 2s forwards;
     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.8);
 }
